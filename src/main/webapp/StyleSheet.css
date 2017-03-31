@@ -1,0 +1,46 @@
+.cabecalho{background-color: rgba(255,255,255,0.60);}
+#logo{position: relative; 
+      left: 3%;
+}
+#logar{position: absolute; 
+       right: 15%;
+       top: 10%;
+       font-family: cursive;
+}
+#cadastro{position: absolute; 
+          left: 20%;
+          top: 40%;
+
+}
+.borda{
+    border-color: rgba(255,255,255,0.60);
+    border-style: solid;
+    border-width: 20px;   
+}
+.borda:hover{
+    width: 350px;
+    height: 350px;    
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;   
+    transition-property: all;
+}
+
+#config{position: absolute; 
+        right: 20%;
+        top: 40%;
+}
+body{background-image: url("fund.png"); 
+     background-repeat: no-repeat;
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 10px;
+     margin-left: 0px;
+     background-size: cover;
+}
+
+p{background-color: rgba(255,255,255,0.60);
+  font-size: 60pt;
+  font-family: cursive;
+  text-align: center;
+
+}
