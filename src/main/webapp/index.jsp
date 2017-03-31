@@ -16,24 +16,11 @@ and open the template in the editor.
         <title>S.W. Junior - Gado Bovino</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+        <link rel="stylesheet" type="text/css" href="css\StyleSheet.css"/>
     </head>
     <body>
-        <header class = "cabecalho">
-            <div>
-                <img id = "logo" src="logo.png" alt="Logo" width="35%"/>  
-                <form action="CadBoi" method="post">
-                <div id = "logar">
-                <label> Login: <label/>
-                    <input type = "text" name = "login">
-                    <label> Senha: <label/>
-                        <input type = "password" name = "senha">
-                        <input type = "submit" name = "enviar">
-                        </div>
-                </form>
-                        </div>   
-                        </header>  
-        <div id = "cadastro"> <a href="index_1.html"><img class ="borda" src="brinco.png" width="300px" height="300px"/></a> </div>
-        <div id = "config"> <a href="index_1.html"><img class ="borda" src="ferrar.png" width="300px" height="300px"/></a> </div>
+        <%@include file="cabecalho.jsp"%>
+        <div id = "cadastro"> <a href="nonejsp.jsp"><img class ="borda" src="img\brinco.png" width="300px" height="300px"/></a> </div>
+        <div id = "config"> <a href="nonejsp.jsp"><img class ="borda" src="img\ferrar.png" width="300px" height="300px"/></a> </div>
                         </body>
                         </html>

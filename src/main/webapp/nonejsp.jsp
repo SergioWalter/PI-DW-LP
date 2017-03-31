@@ -10,12 +10,12 @@
         <title>S.W. Junior - Gado Bovino</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+        <link rel="stylesheet" type="text/css" href="css\StyleSheet.css"/>
     </head>
     <body>
         <header class = "cabecalho">
             <div>
-                <img id = "logo" src="logo.png" alt="Logo" width="35%"/>                 
+                <img id = "logo" src="img\logo.png" alt="Logo" width="35%"/>                 
                         </div>        
                         </header>  
                         <p> Em breve</p>
