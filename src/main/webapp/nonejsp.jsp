@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<%-- 
+    Document   : nonejsp
+    Created on : 31/03/2017, 10:51:36
+    Author     : Sergio Walter Junior
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <title>S.W. Junior - Gado Bovino</title>
