@@ -6,16 +6,17 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <header class = "cabecalho">
-            <div>
-                <img id = "logo" src="img\logo.png" alt="Logo" width="35%"/>  
-                <form action="CadBoi" method="post">
-                <div id = "logar">
+    <div>
+        <a href="index.jsp"><img id = "logo" src="img\logo.png" alt="Logo" width="35%"/></a>  
+        <form action="CadBoi" method="post">
+            <div id = "logar">
                 <label> Login: <label/>
-                    <input type = "text" name = "login">
+                    <input type = "text" name = "Login">
                     <label> Senha: <label/>
-                        <input type = "password" name = "senha">
-                        <input type = "submit" name = "enviar">
+                        <input type = "password" name = "Senha">
+                        <input type = "submit" name = "Enviar">
+                        <a href="cadastro.jsp"><input type="button" name="Cadastrar" value="Cadastrar"></a>
                         </div>
-                </form>
+                        </form>
                         </div>   
                         </header> 

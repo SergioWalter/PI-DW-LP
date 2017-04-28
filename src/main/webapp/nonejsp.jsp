@@ -13,11 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css\StyleSheet.css"/>
     </head>
     <body>
-        <header class = "cabecalho">
-            <div>
-                <img id = "logo" src="img\logo.png" alt="Logo" width="35%"/>                 
-                        </div>        
-                        </header>  
+        <%@include file="cabecalho_1.jsp"%>
                         <p> Em breve</p>
                         </body>
                         </html>
