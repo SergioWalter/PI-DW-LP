@@ -30,7 +30,8 @@
                     <input type = "text" name = "Emailcad" size="40"></br>
                     </div>
             <div id ="logcampo">
-                    <input type = "submit" name = "Cadastrar">
+                    <input type = "submit" name = "Cadastrar" value = "Vai!">
+                    <input type = "submit" name = "Cadastrar" value = "Listar">                    
             </div>
                     </div>
         </form>

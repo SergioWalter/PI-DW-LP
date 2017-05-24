@@ -21,6 +21,6 @@ and open the template in the editor.
     <body>
         <%@include file="cabecalho.jsp"%>
         <div id = "cadastro"> <a href="nonejsp.jsp"><img class ="borda" src="img\brinco.png" width="300px" height="300px"/></a> </div>
-        <div id = "config"> <a href="nonejsp.jsp"><img class ="borda" src="img\ferrar.png" width="300px" height="300px"/></a> </div>
+        <div id = "config"> <a href="nonejsp.jsp"><img class ="borda" src="img\ferrar.png" width="300px" height="300px"/></a> </div>        
                         </body>
                         </html>

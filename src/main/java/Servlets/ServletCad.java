@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,24 +41,35 @@ public class ServletCad extends HttpServlet {
             throws ServletException, IOException {
 
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            List<Usuario> dados = savePrint(request.getParameter("Logincad"), request.getParameter("Senhacad"), request.getParameter("Emailcad"));
-            String aux[];
-            aux = String.valueOf(dados).split(";");
-            for (String string : aux) {
-                System.out.println(string);
+        String a = request.getParameter("Cadastrar");
+        if (a.equals("Vai!")) {      
+            
+            try (PrintWriter out = response.getWriter()) {
+                List<Usuario> dados = savePrint(request.getParameter("Logincad"), request.getParameter("Senhacad"), request.getParameter("Emailcad"));
+                String aux[];
+                aux = String.valueOf(dados).split(";");                
+                out.println("<!DOCTYPE html>");
+                out.println("<html>");
+                out.println("<head>");
+                out.println("<title>Servlet ServletCad</title>");
+                out.println("</head>");
+                out.println("<body>");                
+                out.println("<h1>" + aux[0].substring(1) +aux[1]+aux[2].substring(0,aux[2].length()-1)+"</h1>");
+                out.println("</body>");
+                out.println("</html>");
             }
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ServletCad</title>");
-            out.println("</head>");
-            out.println("<body>");
-            lista = controle.list();
-            out.println(lista);
-            out.println("</body>");
-            out.println("</html>");
+            
+        }
+        if (a.equals("Listar")) {       
+            
+            DAOs.DAOUsuario daoUsuario = new DAOs.DAOUsuario();
+            
+            List<Usuario> listinha = daoUsuario.listInOrderNome();
+            
+            request.setAttribute("Usuario", listinha);
+            RequestDispatcher rd = request.getRequestDispatcher("nonejsp_1.jsp");
+            rd.forward(request, response);
+            
         }
 
     }

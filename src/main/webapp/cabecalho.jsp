@@ -8,7 +8,7 @@
 <header class = "cabecalho">
     <div>
         <a href="index.jsp"><img id = "logo" src="img\logo.png" alt="Logo" width="35%"/></a>  
-        <form action="CadBoi" method="post">
+        <form action="ServletAula" method="post">
             <div id = "logar">
                 <label> Login: <label/>
                     <input type = "text" name = "Login">

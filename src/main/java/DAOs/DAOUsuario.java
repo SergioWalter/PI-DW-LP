@@ -10,11 +10,11 @@ public class DAOUsuario extends DAOGenerico<Usuario> {
     }
 
 public List<Usuario> listByNome(String nome) {
-return em.createQuery("SELECT e FROM Usuario e WHERE e.nome LIKE :nome").setParameter("nome", "%" + nome + "%").getResultList();
+return em.createQuery("SELECT e FROM Usuario e WHERE e.nome LIKE :nome").setParameter("nome", nome).getResultList();
 }
 
 public List<Usuario> listInOrderNome() {
-return em.createQuery("SELECT e FROM Usuario e ORDER BY e.nomeUsuario").getResultList();}
+return em.createQuery("SELECT e FROM Usuario e ORDER BY e.nome").getResultList();}
 
 public List<Usuario> listBySenha(String senha) {
 return em.createQuery("SELECT e FROM Usuario e WHERE e.senhaUsuarioLIKE :senha").setParameter("senha", "%" + senha + "%").getResultList();
